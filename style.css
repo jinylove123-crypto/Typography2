@@ -1,0 +1,314 @@
+/*
+Copyright (c) 2021 Kil Hyung-jin, with Reserved Font Name Pretendard.
+https://github.com/orioncactus/pretendard
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+*/
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 900;
+	font-display: swap;
+	src: local('Pretendard Black'), url(./woff2/Pretendard-Black.woff2) format('woff2'), url(./woff/Pretendard-Black.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-display: swap;
+	src: local('Pretendard ExtraBold'), url(./woff2/Pretendard-ExtraBold.woff2) format('woff2'), url(./woff/Pretendard-ExtraBold.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard Bold'), url(./woff2/Pretendard-Bold.woff2) format('woff2'), url(./woff/Pretendard-Bold.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-display: swap;
+	src: local('Pretendard SemiBold'), url(./woff2/Pretendard-SemiBold.woff2) format('woff2'), url(./woff/Pretendard-SemiBold.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: swap;
+	src: local('Pretendard Medium'), url(./woff2/Pretendard-Medium.woff2) format('woff2'), url(./woff/Pretendard-Medium.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url(./woff2/Pretendard-Regular.woff2) format('woff2'), url(./woff/Pretendard-Regular.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 300;
+	font-display: swap;
+	src: local('Pretendard Light'), url(./woff2/Pretendard-Light.woff2) format('woff2'), url(./woff/Pretendard-Light.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 200;
+	font-display: swap;
+	src: local('Pretendard ExtraLight'), url(./woff2/Pretendard-ExtraLight.woff2) format('woff2'), url(./woff/Pretendard-ExtraLight.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 100;
+	font-display: swap;
+	src: local('Pretendard Thin'), url(./woff2/Pretendard-Thin.woff2) format('woff2'), url(./woff/Pretendard-Thin.woff) format('woff');
+}
+:root {
+  --main-color: #1b4dff;     /* 포인트 컬러 */
+  --bg-light: #f9f9fb;   /* 페이지 배경 */
+  --text-dark: #111;
+  --text-gray: #333;
+}
+html{
+  background-color: var(--bg-light);
+}
+body{
+ font-family: 'Pretendard';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.68;
+  letter-spacing: 0.015em;       
+  color: var(--text-gray);
+  max-width: 1120px;
+  margin: auto;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+  background-color: white;
+  border-radius: 19px;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+h1{
+  font-size: 3.52631579em;/*67px*/
+  font-weight: 800;
+  line-height: 1.43283582em;/*96px*/
+  margin-top: 0.47761194em;/*32px*/
+  margin-bottom: 0.95522388em;/*64px*/
+  color: var(--main-color);
+}
+#however{
+  display: inline;
+  font-family: 'Pretendard';
+  font-size: 20px;
+  font-weight: 100;     
+  color: var(--text-gray);
+}
+h2{
+  font-size: 2.31578947em;/*44px*/
+  line-height: 1.45454545em;/*64px*/
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-top: 0.72727273em;/*32px*/
+  margin-bottom: 0.72727273em;/*32px*/
+  border-left: 6px solid var(--main-color);
+  padding-left: 14px;
+}
+h3{
+  font-size: 1.52631579em;/*29px*/
+  line-height: 1.10344828em;
+  font-weight: 700;
+  margin-top: 1.10344828em;/*32px*/
+  margin-bottom: 0em;
+  color: var(--main-color);
+}
+h4, .h4 {
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--text-dark);
+  line-height: 1.68421053em;/*32px*/
+  margin-top: 1.68421053em;
+  margin-bottom: 0px;
+}
+#diary h4 img {
+  width: 1.10344828em;/*32px*/
+  height: 1.10344828em;/*32px*/
+  border-radius: 50%; /* 동그란 프로필 */
+  object-fit: cover;
+  border: 2px solid var(--main-color);
+}
+
+/* 이름과 이미지가 수평 정렬되도록 수정 */
+#diary > div h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+/* ---------- diary toggle (details/summary) ---------- */
+
+/* 카드 컨테이너: 기존 #diary > div 스타일을 대체/보완 */
+#diary {
+  display: grid;
+  grid-template-columns: 1fr; /* 필요시 칼럼 늘리기 가능 */
+  gap: 24px;
+}
+
+/* 기존 카드 디자인을 유지하도록 .diary-card 를 사용 */
+.diary-card {
+  background: #fff;
+  border: 2px solid #eee;
+  border-radius: 1em;
+  padding: 1.68421053em;/*32px*/
+  padding-top: 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+  transition: box-shadow 0.2s ease, transform 0.18s ease;
+}
+
+/* h4 (이름) 스타일 유지 */
+.diary-card > h4 {
+  margin-bottom: 12px;
+}
+
+/* details 기본 리셋 */
+.diary-card details {
+  width: 100%;
+}
+
+/* summary를 '첫 문장'으로 보여주기 — 보이게 하고 마커 숨김 */
+.diary-card summary {
+  display: block;
+  cursor: pointer;
+  list-style: none;
+  outline: none;
+  font-weight: 500;
+  font-family: 'Pretendard';
+  font-size: 1em;
+  color: var(--text-dark);
+  padding-right: 36px; /* 아이콘 공간 */
+  margin-bottom: 6px;
+}
+
+/* 브라우저 기본 마커 숨기기 */
+.diary-card summary::-webkit-details-marker {
+  display: none;
+}
+.diary-card summary::marker {
+  content: none;
+}
+
+/* custom plus/minus icon */
+.diary-card summary::after {
+  content: "＋";
+  position: absolute;
+  right: 28px;
+  font-weight:700;
+  color: var(--main-color);
+  transition: transform 0.18s ease, content 0.18s ease;
+}
+
+/* entry content (나머지 본문) — 접힘 상태 */
+.diary-card .entry-content {
+  max-height: 3.6em; /* 대략 첫 문장 2줄 정도 보이게 조절 가능 */
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.36s ease;
+  padding-right: 8px;
+}
+
+/* opened 상태: 전체 펼치기 */
+.diary-card details[open] .entry-content {
+  max-height: 1000px; /* 충분히 큰 값으로 전체 확장 */
+}
+/* opened 상태에서 아이콘 변경(−) */
+.diary-card details[open] summary::after {
+  content: "−";
+}
+
+/* hover / focus 시 시각적 피드백 */
+.diary-card summary:hover,
+.diary-card summary:focus {
+  color: var(--main-color);
+}
+
+/* 카드 hover 효과 */
+.diary-card:hover {
+  transform: translateY(-0.6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+}
+
+/* summary 위치 안정화: summary::after 는 절대 위치라 summary를 상대 위치로 만듦 */
+.diary-card summary {
+  position: relative;
+}
+/* entry-content 내부 문단 간격 */
+.diary-card .entry-content p {
+  margin: 9.5px 0;
+}
+
+/* 반응형 보완 (원본 스타일과 함께 사용) */
+@media (max-width: 600px) {
+  .diary-card {
+    padding: 18px;
+    border-radius: 14px;
+  }
+  .diary-card .entry-content {
+    max-height: 4.2em;
+  }
+}
+#grid{
+  max-width: 840px;
+  align-content: center;
+  padding: 140px;
+  padding-top: 76px;
+}
+p {
+  word-break: keep-all;  /* 한글 단어 단위로만 줄바꿈 */
+  overflow-wrap: break-word; /* 너무 긴 단어는 줄바꿈 허용 */
+}
+p, ul, ol, pre, table, blockquote {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* Let's make sure all's aligned */
+hr, .hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+a, b, i, strong, em, small, code {
+  line-height: 0;
+}
+sub, sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+#diary p{
+    margin-bottom: 0px;
+}
+
+@media(max-width:1205px){
+  body{
+      margin-left: clamp(20px, 5vw, 100px);
+      margin-right: clamp(20px, 5vw, 100px);
+  }
+  #grid{
+  padding: clamp(16px, 10vw, 140px)
+}
+  }
